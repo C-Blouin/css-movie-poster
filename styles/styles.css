@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Poor+Story&display=swap");
+
+/*Font downloaded from https://www.dafont.com/burtons-nightmare.font*/
+/* Imported Font Family & Glyphs, access the font file from the font folder */
+@font-face {
+  font-family: "nightmare_before_christmasRg";
+  src: url(../fonts/NITEMARE.TTF);
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Start of Background Styles */
+
+.background {
+  background-image: url(../images/Nightmare_Before_Christmas_Christopher_Blouin_1xScale.png);
+  height: 1250px;
+  width: 800px;
+  border-radius: 20px;
+  /*Center the poster with margin: auto, and diplaying the image as a block level element*/
+  display: block;
+  margin: auto;
+  background-repeat: no-repeat;
+}
+
+.background:hover {
+  box-shadow: 0 4px 40px 0 rgba(7, 0, 34, 0.9);
+  transition: 0.2s ease-in;
+}
+
+/* End of Background Styles */
+
+/* Poster Heading Styles Start*/
+
+h1 {
+  color: orange;
+  position: absolute;
+  margin: 900px 0px 0px 180px;
+  font-size: 200%;
+  font-family: "nightmare_before_christmasRg";
+  letter-spacing: 10px;
+  text-shadow: 0 5px 10px rgba(243, 178, 80, 0.4);
+}
+
+h2 {
+  color: white;
+  position: absolute;
+  margin: 950px 0px 0px 270px;
+  font-size: 240%;
+  font-family: "nightmare_before_christmasRg";
+  text-shadow: 0 5px 15px rgba(238, 238, 238, 0.3);
+  letter-spacing: 2px;
+}
+
+.indent-title {
+  margin-left: 65px;
+  padding-top: 30px;
+}
+
+[href="https://www.imdb.com/title/tt0107688/"]
+{
+  text-decoration: none;
+  color: white;
+}
+
+[href="https://www.imdb.com/title/tt0107688/"]:hover
+{
+  text-decoration: none;
+  text-shadow: 0 5px 15px rgba(184, 0, 0, 0.8);
+  transition: 0.4s;
+}
+
+/* Poster Heading Styles End*/
+
+/* Credit Styles Start */
+
+.credits {
+  position: absolute;
+  margin-top: 1080px;
+  color: white;
+  font-size: 16px;
+  font-family: "Poor Story", cursive;
+}
+
+.credits h3.credit-attributions {
+  position: absolute;
+  margin: 1px 0px 0px 45px;
+  font-size: 14px;
+  font-family: "Poor Story", cursive;
+}
+
+footer time {
+  position: absolute;
+  margin: -5px 0px 0px 341px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.credits ul {
+  list-style: none;
+}
+
+.credit-line-1 {
+  margin: 0;
+}
+
+.credit-line-2 {
+  margin-left: -10px;
+}
+.credit-line-3 {
+  margin-left: 10px;
+}
+
+q::before,
+q::after {
+  color: orange;
+  font-size: 20px;
+}
+
+.copyright {
+  margin-left: 188px;
+}
+
+.copyright-credits {
+  position: absolute;
+  margin-top: 1155px;
+  color: white;
+  font-size: 16px;
+  font-family: "Poor Story", cursive;
+}
+
+.production-info img {
+  width: 74%;
+  height: 74%;
+  position: absolute;
+  left: 53%;
+  top: 70%;
+}
+
+.parental-info {
+  width: 25%;
+  height: 25%;
+  position: absolute;
+  left: 26%;
+  top: 95%;
+}
+
+strong {
+  font-weight: 600;
+}
+
+/* Credit Styles End*/
+
+/* Hyperlink Styles Start */
+section ul li a {
+  text-decoration: none;
+  color: orange;
+}
+
+section footer p small a {
+  text-decoration: none;
+  color: orange;
+}
+
+section ul li a:hover {
+  color: rgb(235, 199, 41);
+  text-shadow: 0 5px 10px rgba(235, 199, 41, 0.4);
+}
+
+section footer p small a:hover {
+  color: rgb(235, 199, 41);
+  text-shadow: 0 5px 10px rgba(235, 199, 41, 0.4);
+}
+
+h2 a strong {
+  font-weight: bold;
+}
+
+footer small strong {
+  font-weight: 500;
+}
+/* Hyperlink Styles End */
+
+/* Start of Review Section */
+
+section.review {
+  position: absolute;
+  margin: -278px 0px 0px 45px;
+}
+
+section.review h3 {
+  position: absolute;
+  margin-top: 125px;
+  font-family: "nightmare_before_christmasRg";
+  color: white;
+}
+
+section.review h3 span {
+  position: absolute;
+  margin: -2px 0px 0px 13px;
+  font-size: 16px;
+  font-family: "nightmare_before_christmasRg";
+  color: orange;
+}
+
+/* End of Review Section */
+
+/* Start of animations 
+
+Create a glowing circle that animates outwards and inwards, thanks to Nenad Vracar https://stackoverflow.com/users/4620771/nenad-vracar on Stack Overflow
+https://stackoverflow.com/questions/35754734/a-glow-around-a-circular-image-with-css-on-hover 
+*/
+
+.ghost-dog-nose {
+  position: absolute;
+  margin: 412px 0px 0px 165px;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0px 0px 9px 3px rgb(255, 42, 42);
+  animation: glow 2s linear infinite alternate;
+}
+
+@keyframes glow {
+  to {
+    box-shadow: 0px 0px 20px 10px #ff0000;
+  }
+}
+
+.eyeball-left-glow {
+  position: absolute;
+  margin: 360px 0px 0px 532px;
+  display: inline-block;
+  box-shadow: 0px 0px 5px 2px rgb(255, 0, 0);
+  animation: eyeballglowleft 2s linear infinite alternate;
+}
+
+@keyframes eyeballglowleft {
+  to {
+    box-shadow: 0px 0px 10px 5px #ff0000;
+  }
+}
+
+.eyeball-right-glow {
+  position: absolute;
+  margin: 360px 0px 0px 570px;
+  display: inline-block;
+  box-shadow: 0px 0px 5px 2px rgb(255, 0, 0);
+  animation: eyeballglowright 2s linear infinite alternate;
+}
+
+@keyframes eyeballglowright {
+  to {
+    box-shadow: 0px 0px 10px 5px #ff0000;
+  }
+}
+
+.review-skull-left {
+  position: absolute;
+  margin: 962px 0px 0px 88px;
+  display: inline-block;
+  box-shadow: 0px 0px 3px 2px rgb(255, 255, 255);
+  animation: review-skull-left 2s linear infinite alternate;
+  z-index: 999;
+}
+
+@keyframes review-skull-left {
+  to {
+    box-shadow: 0px 0px 5px 3px #610b00;
+  }
+}
+
+.review-skull-right {
+  position: absolute;
+  margin: 962px 0px 0px 115px;
+  display: inline-block;
+  box-shadow: 0px 0px 1px 0.5px rgb(255, 255, 255);
+  animation: review-skull-left 2s linear infinite alternate;
+  z-index: 999;
+}
+
+@keyframes review-skull-right {
+  to {
+    box-shadow: 0px 0px 2px 1.5px #ff0000;
+  }
+}
+
+/* End of animations */
